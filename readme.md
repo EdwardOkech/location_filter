@@ -1,5 +1,7 @@
 # How to run script
+```
 $ filter.py <my_outfile.json>
+```
 
 #use of script
 This script helps me filter out locations by their area names in my day to day job
@@ -9,7 +11,8 @@ all locations from a specific region from the original json file.This script hel
 
 #example use
 here is an example of the large given json file
-[
+
+```
     {
         "_id": "location:d93f455e-27ca-4408-8c14-e1330917213d",
         "area": "Kumi / Kumi(Kumi)",
@@ -47,14 +50,14 @@ here is an example of the large given json file
     }
     truncated
     ----------
-]
+```
 NOTE::: By truncated i mean the line continues to over 1 million lines of this
 
 Task maybe get all locations from the area Kaabong.
 doing this manually is next to impossible remember we have 1 million lines.
 To solve this i decided to right this script that when runs should out put something like
 OUTPUT:::
-
+```
 {
     "_id": "location:0afee9ae-e92b-4a4f-b479-734c18bcc84f",
     "area": "Kaabong / Dodoth(Kaabong)",
@@ -81,7 +84,7 @@ OUTPUT:::
     "label": "Campshahili  North"
 }
 .....truncated
-
+```
 This saves me alot in my day to day tasks
 
 #any contribution to optimise the script is welcome, go ahed and clone it and maybe modify it to fit your needs :)
